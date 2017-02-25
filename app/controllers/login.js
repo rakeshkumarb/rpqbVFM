@@ -7,8 +7,11 @@ export default Ember.Controller.extend({
         home: function() {
             this.transitionToRoute('home');
         }
+          
 
     }
+   
+
 
 });
 

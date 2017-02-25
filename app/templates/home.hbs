@@ -1,14 +1,26 @@
 
 <div>
-
-  
-    
     <div class="headercolor" id="menu-collapse">
       Rapidqube 
      </div>
      <div id="mySidenav" class="col-sm-3 col-md-2 sidebar"  >
-        <br>
+   
+          <div id="collapse1" class="panel-collapse collapse" >  
+      </div> <br>    
+      
+      <div {{action 'swapanchor'}}> ANCHOR </div>
+      {{#if anchor}}
+        <ul class="list-group">
+          <li class="list-group-item">registration</li>
+          <li class="list-group-item">signin</li>
+          <li class="list-group-item">invoice</li>
+          <li class="list-group-item">pending</li>
+          <li class="list-group-item">payment</li>
+        </ul>
+      {{/if}}
 </div>
+
+
 <div id="content" class="col-sm-3 col-md-6" >
 {{outlet}}
 </div>
