@@ -2,23 +2,18 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-   actions:{
-       
-        swapanchor : function(){
+    actions: {
+        swapanchor: function() {
             var anchor = this.get('anchor');
 
-            if(anchor===undefined || anchor===false){
+            if (anchor === undefined || anchor === false) {
                 console.log("true block");
                 anchor = true;
-            }
-            else{
+            } else {
                 anchor = false;
             }
 
-            this.set('anchor',anchor);
+            this.set('anchor', anchor);
         }
-        
-   }
-   
-    
+    }
 });
