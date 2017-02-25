@@ -1,0 +1,37 @@
+<div class="register-logo">
+        <b>Anchor Sign Purchase Order</b>
+      </div>
+      <div class="box-tools" style="float: right">
+        <div class="input-group input-group-sm" style="width: 250px;">
+          <input type="text" name="table_search" class="form-control pull-right" ng-model="search.anchorprogramID" placeholder="Search By Anchor Program Id">
+     </div>
+ </div>
+          <table class="table table-striped" id="tblGrid">
+        <thead id="tblHead">
+        <tr>
+          <th>Anchor Program Id</th>
+          <th>Anchor Name</th>
+          <th>Vendor Name</th>
+          <th class="text-right">Select Program Id</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="ProgramId in loopThroughAnchorProgramIds | filter:search">
+          <td>{{ProgramId.anchorprogramID}}</td>
+          <td>{{ProgramId.anchorname}}</td>
+          <td>{{ProgramId.vendorfname}}</td>
+          <td class="text-right">
+            <div class="radio">
+              <label><input type="radio" name="optradio" ng-model='select.optradio' ng-value="ProgramId.anchorprogramID"></label>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    
+    <div class="modal-footer">
+      <button class="btn btn-primary" type="button" ng-click="renderAnchorProgramDetails(select.optradio)">OK</button>
+      <button class="btn btn-warning" type="button" ng-click="cancelSelect()">Cancel</button>
+    </div>
+
+
