@@ -1,6 +1,13 @@
 
 
 /* shradda styling - begins */
-
+.headercolor{
+    background-color: mediumslateblue;
+    height: 50px;
+}
+.sidebar{
+    background-color: lightslategray;
+    height: 1200px
+}
 /* shradda styling - end */
 
