@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('home',function(){
       this.route('anchor-registration');
       this.route('anchor-sign-purchase-order');
+      this.route('anchor-invoice-acceptance');
   });
 
   
