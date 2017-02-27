@@ -10,19 +10,30 @@ Router.map(function() {
   this.route('login');
 
   this.route('home',function(){
+      //rakesh - anchor
       this.route('anchor-registration');
       this.route('anchor-sign-purchase-order');
       this.route('anchor-invoice-acceptance');
-  });
-   this.route('home',function(){
-     this.route('vendor-registration');
+      this.route('anchor-pending-payment');
+      this.route('anchor-payment-status');
+      
+      //shradda vendor
+      this.route('vendor-registration');
       this.route('vendor-sign-invoice');
        this.route('vendor-payment-status');
 
-   });
+      //sweta-regulator
+      this.route('livestats');
+      this.route('anchoragreement');
+      this.route('vendoragreement');
+      this.route('anchorprograminit');
+      this.route('anchorprogrampending');
+      this.route('anchororderclose');
 
-  
+  });
+   
 
+ 
 });
 
 export default Router;

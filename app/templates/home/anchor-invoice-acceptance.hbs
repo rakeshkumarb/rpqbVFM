@@ -13,28 +13,31 @@
       </div>
 
     <table class="table table-striped" id="tblGrid">
-        <thead id="tblHead">
+        
           <tr>
             <th>Anchor Program Id</th>
             <th>Vendor Name</th>
             <th>Invoice Id</th>
-            <th class="text-right">Select Invoice</th>
+            
+          </tr><br>
+   
+          <tr>
+            <td>Anchor Program Id</td>
+            <td>Vendor Name</td>
+            <td>Invoice Id</td>
           </tr>
-        </thead>
-      
-        
-         <tbody>
-          <tr ng-repeat="ProgramId in loopThroughInvoices | filter:search">
-          <td>{{ProgramId.poIDr}}</td>
-          <td>{{ProgramId.vendorFname}}</td>
-          <td>{{ProgramId.moID}}</td>
-          <td class="text-right">
-            <div class="radio">
-              <label><input type="radio" name="optradio" ng-model='select.optradio' ng-value="ProgramId"></label>
-            </div>
-          </td>
-        </tr>
-      </tbody>
+            
+
+          <tr>
+            <td>Anchor Program Id</td>
+            <td>Vendor Name</td>
+            <td>Invoice Id</td>
+            
+          </tr>
+   
+
+         
+     
 
 </table>
  
