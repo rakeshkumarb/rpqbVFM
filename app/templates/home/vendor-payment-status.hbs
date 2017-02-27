@@ -58,7 +58,15 @@
         <option value="select">2</option>
    </select><br><br><br>
    <div class="col-md-12">
- <input type="text" id="inputName" placeholder="search by PO ID">
+ <div class="box-tools" style="float: right">
+        <div class="input-group input-group-sm" style="width: 250px;">
+          <input type="text" name="table_search" class="form-control pull-right" ng-model="search.anchorprogramID" placeholder="Search By Po Id">
+
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
  <table class="table">
     <tr>
         <th>PO Number</th>
