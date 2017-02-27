@@ -14,6 +14,11 @@ Router.map(function() {
       this.route('anchor-sign-purchase-order');
       this.route('anchor-invoice-acceptance');
   });
+   this.route('home',function(){
+     this.route('vendor-registration');
+      this.route('vendor-sign-invoice');
+
+   });
 
   
 
