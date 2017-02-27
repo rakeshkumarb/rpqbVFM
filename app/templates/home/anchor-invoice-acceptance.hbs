@@ -11,3 +11,39 @@
           </div>
         </div>
       </div>
+
+    <table class="table table-striped" id="tblGrid">
+        <thead id="tblHead">
+          <tr>
+            <th>Anchor Program Id</th>
+            <th>Vendor Name</th>
+            <th>Invoice Id</th>
+            <th class="text-right">Select Invoice</th>
+          </tr>
+        </thead>
+      
+        
+         <tbody>
+          <tr ng-repeat="ProgramId in loopThroughInvoices | filter:search">
+          <td>{{ProgramId.poIDr}}</td>
+          <td>{{ProgramId.vendorFname}}</td>
+          <td>{{ProgramId.moID}}</td>
+          <td class="text-right">
+            <div class="radio">
+              <label><input type="radio" name="optradio" ng-model='select.optradio' ng-value="ProgramId"></label>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+</table>
+ 
+    <div class="modal-footer">
+      <button class="btn btn-primary" type="button" ng-click="renderAnchorInvoiceDetails(select.optradio);renderVendorInvoicePDF(select.optradio)">OK</button>
+      <button class="btn btn-warning" type="button" ng-click="cancelSelect()">Cancel</button>
+    </div>
+
+
+
+  
+
