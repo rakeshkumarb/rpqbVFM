@@ -20,7 +20,14 @@ Router.map(function() {
 
    });
 
-  
+  this.route('home',function(){
+      this.route('livestats');
+      this.route('anchoragreement');
+      this.route('vendoragreement');
+      this.route('anchorprograminit');
+      this.route('anchorprogrampending');
+      this.route('anchororderclose');
+  });
 
 });
 
