@@ -13,6 +13,7 @@ Router.map(function() {
       this.route('anchor-registration');
       this.route('anchor-sign-purchase-order');
       this.route('anchor-invoice-acceptance');
+      this.route('anchor-pending-payment');
   });
 
   
