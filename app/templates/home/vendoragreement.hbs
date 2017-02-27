@@ -1,0 +1,49 @@
+
+<div class="content-wrapper">
+    
+  <!-- Main content -->
+  
+  <section class="content">
+    <div class="register-box">
+      
+      <div class="register-logo">
+        <h1 align="center">Vendor Agreement</h1> <br>
+      </div>
+      
+      <div class="box-tools" style="float: right">
+        <div class="input-group input-group-sm" style="width: 250px;">
+          {{input type="text" name="table_search" class="form-control pull-right" placeholder="Search By Anchor Name"}}
+
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </div>
+
+        </div>
+      </div>
+
+      <table class="table table-striped" id="tblGrid" name="mytable">
+        <thead id="tblHead">
+        <tr>
+          <th>Vendor Name</th>
+          <th>Vendor Reference Id</th>
+          <th>Vendor Agreement</th>
+        </tr>
+        </thead>
+        <tbody>
+         {{#each object as |item|}}
+        <tr ng-repeat="item in anchorList | filter:search" >
+          <td>{{item.CustomerName}}</td>
+          <td>{{item.AnchorRefNumber}}</td>
+          <td>{{item.Enabled}}</td>
+          <td class="text-right"></td>
+        </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" type="button">OK</button>
+      <button class="btn btn-warning" type="button">Cancel</button>
+    </div>
+  </section>
+</div>

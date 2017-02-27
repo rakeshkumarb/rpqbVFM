@@ -14,3 +14,19 @@
 
 /* shradda styling - end */
 
+.smallbox_bgaqua{
+    background-color: aqua;
+    width:100%
+}
+.smallbox_bggreen{
+    background-color: green;
+    width:100%
+}
+.smallbox_bgyellow{
+    background-color: yellow;
+    width:100%
+}
+.smallbox_bgred{
+    background-color: red;
+    width:100%
+}
