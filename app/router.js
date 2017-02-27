@@ -15,7 +15,8 @@ Router.map(function() {
       this.route('anchor-sign-purchase-order');
       this.route('anchor-invoice-acceptance');
       this.route('anchor-pending-payment');
-
+      this.route('anchor-payment-status');
+      
       //shradda vendor
       this.route('vendor-registration');
       this.route('vendor-sign-invoice');
