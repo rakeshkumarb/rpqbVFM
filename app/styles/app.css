@@ -4,12 +4,47 @@
 .headercolor{
     background-color: mediumslateblue;
     height: 50px;
-
-
+   -webkit-text-fill-color: white;
+    
 }
 .sidebar{
-    background-color:gray;
-    height: 1200px
+    background-color:black;
+    height: 1200px;
+    -webkit-text-fill-color: white;
+}
+.list-group{
+     -webkit-text-fill-color:black;
+}
+.bg-aqua{
+    background-color:deepskyblue;
+    height: 80px;
+    width: 220p;
+}
+.bg-green{
+     background-color:green;
+    height: 80px;
+    width: 220p;
+
+}
+.bg-orange{
+     background-color:orange;
+    height: 80px;
+    width: 220p;
+}
+.bg-red{
+    background-color:red;
+    height: 80px;
+    width: 220p;
+}
+
+.box {
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* shradda styling - end */

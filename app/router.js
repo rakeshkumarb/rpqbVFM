@@ -17,6 +17,7 @@ Router.map(function() {
    this.route('home',function(){
      this.route('vendor-registration');
       this.route('vendor-sign-invoice');
+       this.route('vendor-payment-status');
 
    });
 
