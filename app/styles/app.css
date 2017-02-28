@@ -135,14 +135,48 @@
 }
 .login-box {
     width: 400px;
+    height: 258px;
     margin-top: auto;
     margin-right: auto;
     margin-bottom: auto;
     margin-left: auto;
+     text-align: center;
 }
 .login-box-body {
-    color: gray;
-    background: white;
+    color:black;
+    background:lightgray;
     padding: 20px;
     border-top: 0px;
+    
 }
+.login-box-body .form-control-feedback, .register-box-body .form-control-feedback {
+    color: #777;
+}
+
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.glyphicon {
+    position: absolute;
+    top: 1opx;
+    float: left;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
