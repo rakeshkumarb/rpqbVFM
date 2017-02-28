@@ -17,10 +17,13 @@ Router.map(function() {
       this.route('anchor-pending-payment');
       this.route('anchor-payment-status');
       
-      //shradda vendor
+      //shraddha vendor
       this.route('vendor-registration');
       this.route('vendor-sign-invoice');
-       this.route('vendor-payment-status');
+      this.route('vendor-payment-status');
+
+       //shraddha Payment
+      this.route('payment-initation');
 
       //sweta-regulator
       this.route('livestats');
@@ -31,9 +34,10 @@ Router.map(function() {
       this.route('anchororderclose');
 
   });
-   
 
- 
+
+
+  this.route('Sweta-Shar');
 });
 
 export default Router;
