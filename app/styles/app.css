@@ -1,6 +1,6 @@
 
 
-/* shradda styling - begins */
+/* shraddha styling - begins */
 .headercolor{
     background-color: mediumslateblue;
     height: 50px;
@@ -19,22 +19,26 @@
     background-color:deepskyblue;
     height: 80px;
     width: 220p;
+    -webkit-text-fill-color: white;
 }
 .bg-green{
      background-color:green;
     height: 80px;
     width: 220p;
-
+   -webkit-text-fill-color: white;
+   
 }
 .bg-orange{
      background-color:orange;
     height: 80px;
     width: 220p;
+    -webkit-text-fill-color: white;   
 }
 .bg-red{
     background-color:red;
     height: 80px;
     width: 220p;
+    -webkit-text-fill-color: white;
 }
 
 .box {
@@ -83,4 +87,62 @@
     background-color: red;
     width:100%
 }
+.ng-binding{
+    -webkit-text-fill-color:green;
+}
+.btn{
+    background-color:blue;
+    border-color: white;
+}
 
+.box-header.with-border {
+    border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    color: white;
+    background:cornflowerblue;
+    background-color:cornflowerblue;
+    height: 50px;
+
+   
+}
+.box-header-btm{
+     border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+   
+}
+.col-md-6-header{
+    border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+     color: white;
+    background:cornflowerblue;
+    background-color:cornflowerblue;
+    height: 50px;
+    width: 410px;
+
+}
+.col-md-6-btm{
+     border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+     width: 410px;
+}
+.login-box {
+    width: 400px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.login-box-body {
+    color: gray;
+    background: white;
+    padding: 20px;
+    border-top: 0px;
+}
