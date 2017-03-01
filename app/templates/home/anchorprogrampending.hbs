@@ -85,62 +85,11 @@
     </div>
     <!-- Default box -->
 
-    <div class="box">
-      <div class="box-header">
-        <h3 class="box-title"></h3>
-
-        <div class="box-tools">
-          <ul class="nav nav-tabs" style="border: none;">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding: 5px 15px;">
-                Sort By <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Name</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Time</a></li>
-              </ul>
-            </li>
-            <li class="pull-right">
-              <div class="input-group input-group-sm" style="width: 250px;">
-                <input type="text" name="table_search" class="form-control pull-right"
-                       placeholder="Search by Anchor Program Id" ng-model="search.anchorprogramID">
-
-                <div class="input-group-btn">
-                  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-      <!-- /.box-header -->
-      <div class="box-body no-padding">
-        <table class="table">
-          <tr>
-            <th>Anchor Program Id</th>
-            <th>Customer Name</th>
-            <th>Vendor Name</th>
-            <th>Stage</th>
-            <th>Pending payments</th>
-            <th>Received payments</th>
-            <th>Status</th>
-          </tr>
-          <tr>
-            <td>{{item.anchorprogramID}}</td>
-            <td>{{item.anchorname}}</td>
-            <td>{{item.vendorfname}}</td>
-            <td>{{item.stage}}</td>
-            <td>{{item.amountpending}}</td>
-            <td>{{item.amountreceived}}</td>
-            <td>{{item.status}}</td>
-          </tr>
-
-        </table>
-      </div>
+   
+        {{models-table
+        data=model
+        columns=columns}}<br>
      
-
-    </div>
-  </section>
+     </section>
   <!-- /.content -->
 </div>

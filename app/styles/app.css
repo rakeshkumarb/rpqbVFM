@@ -147,8 +147,11 @@
     background:lightgray;
     padding: 20px;
     border-top: 0px;
-    
+
 }
+
+    
+
 .login-box-body .form-control-feedback, .register-box-body .form-control-feedback {
     color: #777;
 }
@@ -203,5 +206,6 @@
 .head-rapid{
     font-size: x-large;
 }
+
 
 
