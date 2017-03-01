@@ -2,7 +2,7 @@
 
 /* shraddha styling - begins */
 .headercolor{
-    background-color: mediumslateblue;
+    background-color: dodgerblue;
     height: 50px;
    -webkit-text-fill-color: white;
     
@@ -173,10 +173,12 @@
     left: 310px;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
-   
-   
-    
+}
+.logout-header{
+     position: absolute;
+     float: left;
+     left: 945px;
+    -webkit-text-fill-color:darkblue;
     
 }
-
 
