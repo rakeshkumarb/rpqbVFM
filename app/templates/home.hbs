@@ -1,6 +1,8 @@
 <div>
     <div class="headercolor" id="menu-collapse">
-        Rapidqube
+       Rapidqube
+         <button class="btn btn-info" data-toggle="collapse" data-target="#mySidenav">Collapsible</a>
+
 
         <div class="logout-header">
             <button type="button" {{action "logout"}}>Logout</button>
@@ -8,7 +10,7 @@
 
     </div>
 
-    <div id="mySidenav" class="col-sm-3 col-md-2 sidebar">
+    <div id="mySidenav" class="col-sm-3 col-md-2 sidebar collapse">
         <div id="collapse1" class="panel-collapse collapse">
         </div>
         <br>
@@ -59,7 +61,7 @@
         </div>
         {{#if settlement}}
         <ul class="list-group">
-            <li class="list-group-item">YBL Query Qettlement</li>
+            <li class="list-group-item">YBL Query Settlement</li>
         </ul>
         {{/if}}
     </div>
