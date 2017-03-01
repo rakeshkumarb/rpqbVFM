@@ -1,31 +1,70 @@
 <div>
-   <div class="headercolor" id="menu-collapse">
-     Rapidqube
+    <div class="headercolor" id="menu-collapse">
+        Rapidqube
 
-     <div class="logout-header">
-   <button type="button" {{action "logout"}}>Logout</button>
-   </div>
-   
-   </div>
-   
-   <div id="mySidenav" class="col-sm-3 col-md-2 sidebar">
-      <div id="collapse1" class="panel-collapse collapse">
-      </div>
-      <br>
-      <div {{action 'swapanchor'}}> ANCHOR
-   </div>
-   {{#if anchor}}
-   <ul class="list-group">
-      <li class="list-group-item">registration</li>
-      <li class="list-group-item">signin</li>
-      <li class="list-group-item">invoice</li>
-      <li class="list-group-item">pending</li>
-      <li class="list-group-item">payment</li>
-   </ul>
-   {{/if}}
-</div>
+        <div class="logout-header">
+            <button type="button" {{action "logout"}}>Logout</button>
+        </div>
 
-<div id="content" class= "col-md-10">
-   {{outlet}}
-</div>
+    </div>
+
+    <div id="mySidenav" class="col-sm-3 col-md-2 sidebar">
+        <div id="collapse1" class="panel-collapse collapse">
+        </div>
+        <br>
+        <div {{action 'swapregulator'}}> REGULATOR
+        </div>
+        {{#if regulator}}
+        <ul class="list-group">
+            <li class="list-group-item">live chats</li>
+            <li class="list-group-item">anchor agreement</li>
+            <li class="list-group-item">vendor agreement</li>
+            <li class="list-group-item">anchor program initation</li>
+            <li class="list-group-item">anchor program pending</li>
+            <li class="list-group-item">anchor order closed</li>
+        </ul>
+        {{/if}}
+        <br>
+        <div {{action 'swapanchor'}}> ANCHOR
+        </div>
+        {{#if anchor}}
+        <ul class="list-group">
+            <li class="list-group-item">registration</li>
+            <li class="list-group-item">signin</li>
+            <li class="list-group-item">invoice</li>
+            <li class="list-group-item">pending</li>
+            <li class="list-group-item">payment</li>
+        </ul>
+        {{/if}}
+        <br>
+        <div {{action 'swapvendor'}}> VENDOR
+        </div>
+        {{#if vendor}}
+        <ul class="list-group">
+            <li class="list-group-item">vendor registration</li>
+            <li class="list-group-item">vendor sign invoice</li>
+            <li class="list-group-item">vendor payment status</li>
+        </ul>
+        {{/if}}
+        <br>
+        <div {{action 'swappayment'}}>PAYMENT
+        </div>
+        {{#if payment}}
+        <ul class="list-group">
+            <li class="list-group-item">payment initation</li>
+        </ul>
+        {{/if}}
+        <br>
+        <div {{action 'swapsettlement'}}>SETTLEMENT
+        </div>
+        {{#if settlement}}
+        <ul class="list-group">
+            <li class="list-group-item">YBL Query Qettlement</li>
+        </ul>
+        {{/if}}
+    </div>
+
+    <div id="content" class="col-md-10">
+        {{outlet}}
+    </div>
 </div>
