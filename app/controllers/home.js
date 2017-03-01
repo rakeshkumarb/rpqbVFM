@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-
+isActive:"active",
     actions: {
         swapanchor: function() {
             console.log("swap");
@@ -35,6 +35,18 @@ export default Ember.Controller.extend({
 
             this.set('regulator', regulator);
 
+
+        },
+
+        toggleclass: function(){
+            var isActive = this.get('isActive');
+            if(isActive === null || isActive===undefined){
+                    this.set('isActive',"active")
+            }
+            else{
+                this.set('isActive',null)
+            }
+            
 
         },
 
