@@ -170,13 +170,13 @@
     position: absolute;
     top: 1opx;
     float: left;
+    left: 310px;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+   
+   
+    
+    
 }
 
 
