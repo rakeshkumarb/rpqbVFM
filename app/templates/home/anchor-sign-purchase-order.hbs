@@ -1,56 +1,19 @@
+<div class="content-wrapper">
+  
+ 
+ 
 <div class="register-logo">
-        <b>Anchor Sign Purchase Order</b>
-      </div>
-      <div class="box-tools" style="float: right">
-        <div class="input-group input-group-sm" style="width: 250px;">
-          <input type="text" name="table_search" class="form-control pull-right" ng-model="search.anchorprogramID" placeholder="Search By Anchor Program Id">
-
-          <div class="input-group-btn">
-            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-          </div>
-        </div>
+        <h1>Anchor Sign Purchase Order</h1>
       </div>
       
+    {{models-table
+        data=model
+        columns=columns}}
 
-    {{data-table
-  content=model
-  fields="Anchor Program Id Anchor Name Vendor Name"
-  filter=filter
-}}
-          <table class="table table-striped" id="tblGrid">
-          
-        <tr>
-          <th>Anchor Program Id</th>
-          <th>Anchor Name</th>
-          <th>Vendor Name</th>
-        </tr><br>
-       
-        <tbody>
-        
-          <td>{{ProgramId.anchorprogramID}}</td>
-          <td>{{ProgramId.anchorname}}</td>
-          <td>{{ProgramId.vendorfname}}</td>
-          </tr>
-        </tbody>
-
-        <tr>
-          <td>AM1234567</td>
-          <td>Bajaj Electricals Limited</td>
-          <td>MULTI LIGHTING</td>
-        </tr><br>
-
-        <tr>
-          <td>PG5741946</td>
-          <td>Bajaj Electricals Limited</td>
-          <td>MULTI LIGHTING</td>
-        </tr>
-       
-        
-      </table>
     
     <div class="modal-footer">
       <button class="btn btn-primary" type="button" ng-click="renderAnchorProgramDetails(select.optradio)">OK</button>
       <button class="btn btn-warning" type="button" ng-click="cancelSelect()">Cancel</button>
     </div>
-
-
+    
+    </div>

@@ -31,7 +31,8 @@ Router.map(function() {
       this.route('vendoragreement');
       this.route('anchorprograminit');
       this.route('anchorprogrampending');
-      this.route('anchororderclose');
+      this.route('anchororderclosed');
+      this.route('settlement');
 
   });
 
