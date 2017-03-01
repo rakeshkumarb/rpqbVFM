@@ -2,7 +2,7 @@
 
 /* shraddha styling - begins */
 .headercolor{
-    background-color: mediumslateblue;
+    background-color: dodgerblue;
     height: 50px;
    -webkit-text-fill-color: white;
     
@@ -51,7 +51,7 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* shradda styling - end */
+
 
 .smallbox_bgaqua{
     background-color: aqua;
@@ -173,13 +173,38 @@
     position: absolute;
     top: 1opx;
     float: left;
+    left: 310px;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+.logout-header{
+     position: absolute;
+     float: left;
+     left: 945px;
+     top: 10px;
+    -webkit-text-fill-color:darkblue;
+    
+}
+.vendor-ok{
+    background-color: blue;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+}
+.vendor-cancel{
+    background-color:darkorange;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+}
+.head-rapid{
+    font-size: x-large;
 }
 
 >>>>>>> 7191171f90845fdd2aee3a4c8822b11f1af22b2f
