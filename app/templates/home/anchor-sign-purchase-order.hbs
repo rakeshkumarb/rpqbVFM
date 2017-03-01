@@ -10,13 +10,29 @@
           </div>
         </div>
       </div>
+      
+
+    {{data-table
+  content=model
+  fields="Anchor Program Id Anchor Name Vendor Name"
+  filter=filter
+}}
           <table class="table table-striped" id="tblGrid">
-        
+          
         <tr>
           <th>Anchor Program Id</th>
           <th>Anchor Name</th>
           <th>Vendor Name</th>
         </tr><br>
+       
+        <tbody>
+        
+          <td>{{ProgramId.anchorprogramID}}</td>
+          <td>{{ProgramId.anchorname}}</td>
+          <td>{{ProgramId.vendorfname}}</td>
+          </tr>
+        </tbody>
+
         <tr>
           <td>AM1234567</td>
           <td>Bajaj Electricals Limited</td>
