@@ -1,35 +1,50 @@
-<div>
-    <div class="headercolor" id="menu-collapse">
-<<<<<<< HEAD
-       Rapidqube
-         <button class="btn btn-info" data-toggle="collapse" data-target="#mySidenav">Collapsible</a>
 
+<div id="wrapper" class={{isActive}}>
+   <!---try -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+    			</button>
+                <div  class="navbar-brand" {{action "toggleclass"}}>
+                    <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+    				<a href="#">Project name</a>
+                </div>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
 
-=======
-       <div class="head-rapid">
-        Rapidqube
- </div>
->>>>>>> 773a929a29ae88dd6949de0478d4187e701c9229
-        <div class="logout-header">
+         <div class="logout-header">
             <button type="button" {{action "logout"}}>Logout</button>
         </div>
-
-    </div>
-
-    <div id="mySidenav" class="col-sm-3 col-md-2 sidebar collapse">
-        <div id="collapse1" class="panel-collapse collapse">
-        </div>
+        
+	</nav>
+   <!--end try-->
+<div id="sidebar-wrapper">
+    <div id="mySidenav" class="col-sm-3 col-md-2 sidebar">
+   
         <br>
         <div {{action 'swapregulator'}}> REGULATOR
         </div>
         {{#if regulator}}
-        <ul class="list-group">
-            <li class="list-group-item">live chats</li>
-            <li class="list-group-item">anchor agreement</li>
-            <li class="list-group-item">vendor agreement</li>
-            <li class="list-group-item">anchor program initation</li>
-            <li class="list-group-item">anchor program pending</li>
-            <li class="list-group-item">anchor order closed</li>
+        <ul >
+            <li >live chats</li>
+            <li>anchor agreement</li>
+            <li>vendor agreement</li>
+            <li>anchor program initation</li>
+            <li>anchor program pending</li>
+            <li>anchor order closed</li>
         </ul>
         {{/if}}
         <br>
@@ -71,7 +86,7 @@
         </ul>
         {{/if}}
     </div>
-
+</div>
     <div id="content" class="col-md-10">
         {{outlet}}
     </div>
