@@ -11,7 +11,7 @@
     background-color:black;
     height: 1200px;
     padding-top: 25px;
-    width:200px;
+    width:50px;
     -webkit-text-fill-color: white;
 }
 .list-group{
@@ -313,9 +313,6 @@
     color: #fff;
     padding-right: 15px;
 }
-
-
-
 #wrapper {
   padding-left: 0;
 }
