@@ -36,12 +36,12 @@
         </div>
         {{#if regulator}}
         <ul >
-           <li> live Stats </li>
-            <li>anchor agreement</li>
-            <li>vendor agreement</li>
-            <li>anchor program initation</li>
-            <li>anchor program pending</li>
-            <li>anchor order closed</li>
+           <li> {{#link-to "home.livestats"}} live Stats {{/link-to}} </li>
+            <li>{{#link-to "home.anchoragreement"}} Anchor Agreement {{/link-to}}</li>
+            <li>{{#link-to "home.vendoragreement"}}Vendor Agreement{{/link-to}}</li>
+            <li>{{#link-to "home.anchorprograminit"}}anchor program initation{{/link-to}}</li>
+            <li>{{#link-to "home.anchorprogrampending"}}anchor program pending{{/link-to}}</li>
+            <li>{{#link-to "home.anchororderclosed"}}anchor order closed{{/link-to}}</li>
         </ul>
         {{/if}}
         <br>
@@ -49,11 +49,11 @@
         </div>
         {{#if anchor}}
         <ul>
-            <li>Anchor Registration </li>
-            <li>Anchor Sign Purchase Order </li>
-            <li>Anchor Invoice Acceptance </li>
-            <li>Anchor Pending Payment </li>
-            <li>Anchor Payment Status </li>
+            <li>{{#link-to "home.anchor-registration"}}Anchor Registration{{/link-to}} </li>
+            <li>{{#link-to "home.anchor-sign-purchase-order"}}Anchor Sign Purchase Order {{/link-to}} </li>
+            <li>{{#link-to "home.anchor-invoice-acceptance"}}Anchor Invoice Acceptance {{/link-to}}</li>
+            <li>{{#link-to "home.anchor-pending-payment"}}Anchor Pending Payment{{/link-to}} </li>
+            <li>{{#link-to "home.anchor-payment-status"}}Anchor Payment Status {{/link-to}} </li>
         </ul>
         {{/if}}
         <br>
@@ -61,9 +61,9 @@
         </div>
         {{#if vendor}}
         <ul>
-            <li>vendor registration</li>
-            <li>vendor sign invoice</li>
-            <li>vendor payment status</li>
+            <li>{{#link-to "home.vendor-registration"}}Vendor Registration{{/link-to}}</li>
+            <li>{{#link-to "home.vendor-sign-invoice"}}vendor sign invoice{{/link-to}}</li>
+            <li>{{#link-to "home.vendor-payment-status"}}vendor payment status{{/link-to}}</li>
         </ul>
         {{/if}}
         <br>
@@ -71,7 +71,7 @@
         </div>
         {{#if payment}}
         <ul>
-            <li>payment initation</li>
+            <li>{{#link-to "home.payment-initation"}}payment initation{{/link-to}}</li>
         </ul>
         {{/if}}
         <br>
@@ -79,7 +79,7 @@
         </div>
         {{#if settlement}}
         <ul>
-            <li>YBL Query Settlement</li>
+            <li> {{#link-to "home.settlement"}}YBL Query Settlement{{/link-to}}</li>
         </ul>
         {{/if}}
     </div>
