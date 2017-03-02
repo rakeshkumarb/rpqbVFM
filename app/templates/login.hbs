@@ -2,10 +2,10 @@
 <br>
 <div class="login-box">
     <div class="login-box-body">
-        <p>sign in to start your session</p>
+        <p>Sign in to start your session</p>
         <div class="col-sm-12">
             <div class="left-inner-addon">
-                <input type="text" id="inputEmail" placeholder="Email" class="form-control">
+                {{input type="text" id="inputEmail" placeholder="Email" class="form-control"}}
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
         </div>
@@ -13,21 +13,33 @@
         <br>
         <div class="col-sm-12">
             <div class="left-inner-addon">
-                <input type="text" id="inputPassword" placeholder="Password" class="form-control">
+                {{input type="text" id="inputPassword" placeholder="Password" class="form-control"}}
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
 
 
             </div>
         </div>
         <br>
-        <p style="color: blue">
-            <input type="checkbox" name="NameOfCheckBox" checked=NameOfCheckBox>Remember me
-            <br>I forgot my password
-            <br> Register a new membership
+        <p> <br>
+        
+        <div class="col-md-12">
+            <div class="col-md-6 leftalign">
+            {{input type="checkbox" name="NameOfCheckBox" checked=NameOfCheckBox}}  Remember me 
+            </div>
+            <div class="col-md-6 rightalign">
+             <button type="submit" {{action 'home'}}>Sign In</button>
+             
+             </div>
+             </div>
+            <br><br>
+          
+            {{#link-to 'login'}}I forgot my password{{/link-to}}
+            <br>
+            {{#link-to 'login'}} Register a new membership {{/link-to}}
+         
             <br>
             <br>
-            <button type="submit" style="background-color: blue" style="text-align: white" {{action 'home'}}>Sign In</button>
+           
         </p>
     </div>
 </div>
-{{outlet}}

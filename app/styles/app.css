@@ -227,7 +227,7 @@
   margin-left: -250px;
   top: 51px;
   left: 250px;
-  width: 250px;
+  width: 150px;
   background: #000;
   position: fixed;
   height: 100%;
@@ -310,6 +310,7 @@
 #menu-toggle {
     text-decoration: none;
     float: left;
+    left: 200px;
     color: #fff;
     padding-right: 15px;
 }
@@ -334,6 +335,17 @@
 
 #menu-toggle {
   display: inline-block;
+}
+
+.leftalign{
+    left:-30px;
+    top:5px;
+}
+
+.rightalign{
+      right:-50px;
+      top:10px;
+      color: blue;
 }
 
 
