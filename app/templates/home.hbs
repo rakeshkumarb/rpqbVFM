@@ -51,38 +51,38 @@
         <div {{action 'swapanchor'}}> ANCHOR
         </div>
         {{#if anchor}}
-        <ul class="list-group">
-            <li class="list-group-item">registration</li>
-            <li class="list-group-item">signin</li>
-            <li class="list-group-item">invoice</li>
-            <li class="list-group-item">pending</li>
-            <li class="list-group-item">payment</li>
+        <ul>
+            <li>Anchor Registration </li>
+            <li>Anchor Sign Purchase Order </li>
+            <li>Anchor Invoice Acceptance </li>
+            <li>Anchor Pending Payment </li>
+            <li>Anchor Payment Status </li>
         </ul>
         {{/if}}
         <br>
         <div {{action 'swapvendor'}}> VENDOR
         </div>
         {{#if vendor}}
-        <ul class="list-group">
-            <li class="list-group-item">vendor registration</li>
-            <li class="list-group-item">vendor sign invoice</li>
-            <li class="list-group-item">vendor payment status</li>
+        <ul>
+            <li>vendor registration</li>
+            <li>vendor sign invoice</li>
+            <li>vendor payment status</li>
         </ul>
         {{/if}}
         <br>
         <div {{action 'swappayment'}}>PAYMENT
         </div>
         {{#if payment}}
-        <ul class="list-group">
-            <li class="list-group-item">payment initation</li>
+        <ul>
+            <li>payment initation</li>
         </ul>
         {{/if}}
         <br>
         <div {{action 'swapsettlement'}}>SETTLEMENT
         </div>
         {{#if settlement}}
-        <ul class="list-group">
-            <li class="list-group-item">YBL Query Settlement</li>
+        <ul>
+            <li>YBL Query Settlement</li>
         </ul>
         {{/if}}
     </div>
