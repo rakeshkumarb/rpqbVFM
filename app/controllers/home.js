@@ -3,6 +3,12 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 isActive:"active",
     actions: {
+//
+  //      gotolivestats: function(){
+    
+    //        this.transitionToRoute('livestats');
+      //  },
+
         swapanchor: function() {
             console.log("swap");
             var anchor = this.get('anchor');
@@ -90,5 +96,5 @@ isActive:"active",
 
             this.set('settlement', settlement);
         }
-    }
+        }
 });
