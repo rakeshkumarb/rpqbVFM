@@ -73,19 +73,19 @@
 }
 
 /* Rakesh Styling */
-.small-box_bg-aqua{
+.smallbox_bgaqua{
     background-color: aqua;
     width:100%
 }
-.small-box_bg-green{
+.smallbox_bggreen{
     background-color: green;
     width:100%
 }
-.small-box_bg-yellow{
+.smallbox_bgyellow{
     background-color: yellow;
     width:100%
 }
-.small-box_bg-red{
+.smallbox_bgred{
     background-color: red;
     width:100%
 }
@@ -129,6 +129,13 @@
 
 }
 .col-md-6-btm{
+     border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+     width: 410px;
+}
+.box-col-md-6-box-body{
      border-bottom: 1px solid blue;
     border-top: 1px solid blue;
     border-left: 1px solid blue;
