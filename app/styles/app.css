@@ -19,27 +19,27 @@
 }
 .bg-aqua{
     background-color:deepskyblue;
-    height: 80px;
-    width: 220p;
+    height: 90px;
+    width: 310px;
     -webkit-text-fill-color: white;
+     
 }
 .bg-green{
      background-color:green;
-    height: 80px;
-    width: 220p;
+    height: 90px;
+    width: 310px;
    -webkit-text-fill-color: white;
-   
 }
 .bg-orange{
      background-color:orange;
-    height: 80px;
-    width: 220p;
+    height: 90px;
+    width: 310px;
     -webkit-text-fill-color: white;   
 }
 .bg-red{
     background-color:red;
-    height: 80px;
-    width: 220p;
+   height: 90px;
+    width: 310px;
     -webkit-text-fill-color: white;
 }
 
@@ -93,15 +93,15 @@
     -webkit-text-fill-color:green;
 }
 .btn{
-    background-color:blue;
+    background-color:dodgerblue;
     border-color: white;
 }
 
 .box-header.with-border {
-    border-bottom: 1px solid blue;
-    border-top: 1px solid blue;
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
+    border-bottom: 1px solid dodgerblue;
+    border-top: 1px solid dodgerblue;
+    border-left: 1px solid dodgerblue;
+    border-right: 1px solid dodgerblue;
     color: white;
     background:cornflowerblue;
     background-color:cornflowerblue;
@@ -110,17 +110,17 @@
    
 }
 .box-header-btm{
-     border-bottom: 1px solid blue;
-    border-top: 1px solid blue;
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
+     border-bottom: 1px solid dodgerblue;
+    border-top: 1px solid dodgerblue;
+    border-left: 1px solid dodgerblue;
+    border-right: 1px solid dodgerblue;
    
 }
 .col-md-6-header{
-    border-bottom: 1px solid blue;
-    border-top: 1px solid blue;
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
+    border-bottom: 1px solid dodgerblue;
+    border-top: 1px solid dodgerblue;
+    border-left: 1px solid dodgerblue;
+    border-right: 1px solid dodgerblue;
      color: white;
     background:cornflowerblue;
     background-color:cornflowerblue;
@@ -129,10 +129,10 @@
 
 }
 .col-md-6-btm{
-     border-bottom: 1px solid blue;
-    border-top: 1px solid blue;
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
+     border-bottom: 1px solid dodgerblue;
+    border-top: 1px solid dodgerblue;
+    border-left: 1px solid dodgerblue;
+    border-right: 1px solid dodgerblue;
      width: 410px;
 }
 .box-col-md-6-box-body{
@@ -258,9 +258,9 @@
 }
 
 .sidebar-nav {
-  position: absolute;
+  position:relative;
   top: 0;
-  width: 250px;
+  width: 50px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -326,7 +326,7 @@
 }
 
 #sidebar-wrapper {
-  left: 0;
+  left: 0px;
 }
 
 #wrapper.active {
