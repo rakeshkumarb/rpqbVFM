@@ -81,25 +81,44 @@
 }
 
 /* Rakesh Styling */
-.small-box_bg-aqua{
-    background-color: aqua;
-    width:100%
+.box-body1{
+ border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+     width: 330px;
 }
-.small-box_bg-green{
-    background-color: green;
-    width:100%
+.boder{
+ border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+     width: 330px;
 }
-.small-box_bg-yellow{
-    background-color: yellow;
-    width:100%
+
+.anchor-ok{
+    background-color: blue;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
 }
-.small-box_bg-red{
-    background-color: red;
-    width:100%
+.anchor-cancel{
+    background-color:darkorange;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    position: relative;
+    right: 300px;
+    bottom: 20px;
 }
-.ng-binding{
-    -webkit-text-fill-color:green;
-}
+
+
 .btn{
     background-color:dodgerblue;
     border-color: white;
@@ -143,6 +162,13 @@
     border-right: 1px solid dodgerblue;
      width: 410px;
 }
+.box-col-md-6-box-body{
+     border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+     width: 410px;
+}
 .login-box {
     width: 400px;
     height: 258px;
@@ -159,6 +185,7 @@
     border-top: 0px;
 
 }
+
 
     
 

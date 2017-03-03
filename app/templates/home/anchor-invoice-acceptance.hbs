@@ -1,7 +1,7 @@
-<div class="register-logo">
+<div class="register-logo"><br><br>
         <h1 align="center">Anchor Invoice Acceptance</h1>
       </div>
-
+        <div class= "col-sm-11">
       <div class="box-tools" style="float: right">
         <div class="input-group input-group-sm" style="width: 250px;">
           <input type="text" name="table_search" class="form-control pull-right" ng-model="search.anchorprogramID" placeholder="Search By Anchor Program Id">
@@ -10,6 +10,7 @@
             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
           </div>
         </div>
+      </div>
       </div>
 
     <table class="table table-striped" id="tblGrid">
@@ -41,10 +42,20 @@
 
 </table>
  
-    <div class="modal-footer">
-      <button class="btn btn-primary" type="button" ng-click="renderAnchorInvoiceDetails(select.optradio);renderVendorInvoicePDF(select.optradio)">OK</button>
-      <button class="btn btn-warning" type="button" ng-click="cancelSelect()">Cancel</button>
-    </div>
+    <br>
+   <br>
+   <br>
+   <div class="col-sm-12">
+    <div class="col-sm-6">
+      <div class="anchor-ok">
+        <button type="submit">ok</button>
+        </div>
+        </div>
+        <br>
+       <div class="anchor-cancel">
+         <button type="submit">cancel</button>
+</div>
+</div>
 
 
 

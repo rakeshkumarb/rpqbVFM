@@ -7,6 +7,5 @@
   */
 
 
-  "disableAnalytics": false,
-"port":4545
+  "disableAnalytics": false
 }

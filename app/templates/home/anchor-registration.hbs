@@ -14,31 +14,34 @@
 		<div class="row">
 			<div ng-controller="AnchorRegistrationController">
 				<uib-accordion close-others="oneAtATime">
-					<div class="col-md-6">
+			
+					<div class="col-md-5">
 						<div uib-accordion-group class="panel-default" is-open="status.open">
+							<div class="boder">
 							<uib-accordion-heading>
 								Anchor Personal Details
 								<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 							</uib-accordion-heading>
+							</div>
 							<form name="anchorPersonalDetails" class="form-horizontal">
-								<div class="box-body">
-									<div class="form-group">
+								<div class="box-body1">
+									<div class="form-group"><br>
 										<label for="anchorName" class="col-sm-4 control-label">Anchor Name</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.CustomerName" placeholder="Name" required>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorEmail" class="col-sm-4 control-label">Anchor Email ID</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="email" class="form-control" ng-model="anchor.CustomerEmail" placeholder="Email" required>
 											<span class="-envelope form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="anchorEmail" class="col-sm-4 control-label">Anchor Mobile No.</label>
-										<div class="col-sm-8">
+										<label for="anchormobileNo" class="col-sm-4 control-label">Anchor Mobile No.</label>
+										<div class="col-sm-6">
 											<input type="number" class="form-control" ng-model="anchor.CustomerMobileNo"  placeholder="Mobile Number" required>
 											<span class="form-control-feedback"></span>
 										</div>
@@ -48,149 +51,152 @@
 						</div>						
 					</div>
 					
-					<div class="col-md-6">
+					<div class="col-md-5">
 						<div uib-accordion-group class="panel-default">
+							<div class="boder">
 							<uib-accordion-heading>
 								Anchor Bank Details
 								<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 							</uib-accordion-heading>
+							</div>
 							<form name="anchorBankDetails" class="form-horizontal">
-								<div class="box-body">
-									<div class="form-group">
+								<div class="box-body1">
+									<div class="form-group"><br>
 										<label for="anchorOperationsEmail" class="col-sm-4 control-label">Operations Email ID</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.OperationsEmail"  placeholder="Operations Email" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorRepaymentAccNo" class="col-sm-4 control-label">Repayment Account No.</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.RepaymentAccountNo"  placeholder="Repayment Account No " disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorRelationshipManagerEmail" class="col-sm-4 control-label">Relationship Manager Email ID</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control"  ng-model="anchor.RelationshipManagerEmail" placeholder="Relationship Manager Email" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorLimit" class="col-sm-4 control-label">Customers Limit</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.CustomersLimit" placeholder="Customers Limit" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorIncomeAccNo" class="col-sm-4 control-label">Fee IncomeAccount No.</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.FeeIncomeAccountNo" placeholder="Fee IncomeAccount No" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorFeePercentage" class="col-sm-4 control-label">Fee Percentage</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.FeePercentage" placeholder="Fee Percentage" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorPenalInterest" class="col-sm-4 control-label">Penal Interest</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.PenalInterest" placeholder="Penal Interest" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorFeeGraceInterest" class="col-sm-4 control-label">Fee GraceInterest</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.GraceInterest" placeholder="Fee GraceInterest" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorIncomeAccNo" class="col-sm-4 control-label">Fee IncomeAccount No.</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.FeeIncomeAccountNo" placeholder="Fee IncomeAccount No" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorGraceInterestPeriod" class="col-sm-4 control-label">Grace Interest Period</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.GraceInterestPeriod" placeholder="Grace Interest Period" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorInterestEarnedGL" class="col-sm-4 control-label">Interest Earned GL</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.InterestEarnedGL" placeholder="Interest Earned GL" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorLimitExpiryDate" class="col-sm-4 control-label">Limit Expiry Date</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.LimitExpiryDate" placeholder="Limit Expiry Date" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorPoolAccNo" class="col-sm-4 control-label">Pool Account No</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.PoolAccountNo" placeholder="Pool Account No" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorVendorFinanceGL" class="col-sm-4 control-label">Vendor Finance GL</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.VendorFinanceGL" placeholder="Vendor Finance GL" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorAccruedInterestPayableGL" class="col-sm-4 control-label">Accrued Interest Payable GL</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.AccruedInterestPayableGL" placeholder="Accrued Interest Payable GL" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorAccruedInterestReceivableGL" class="col-sm-4 control-label">Accrued Interest Receivable GL</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.AccruedInterestReceivableGL" placeholder="Accrued Interest Receivable GL" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorLiquidation" class="col-sm-4 control-label">Liquidation</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control"  ng-model="anchor.Liquidation" placeholder="Liquidation" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 									<div class="form-group">
 										<label for="anchorMaximumOverDuePercentage" class="col-sm-4 control-label">Maximum Over Due Percentage</label>
-										<div class="col-sm-8">
+										<div class="col-sm-6">
 											<input type="text" class="form-control" ng-model="anchor.MaximumOverDuePercentage" placeholder="Maximum Over Due Percentage" disabled>
 											<span class="form-control-feedback"></span>
 										</div>
 									</div>
 								</div>
+								<div class="text-right">
+				<button class="btn btn-primary btn-block btn-flat" ng-click="registerAnchor(anchor)" ng-disabled="myForm.$invalid" style="width: 100px">Register</button>
+            </div>
 							</form>
 						</div>
 					</div>
+					
 				</uib-accordion>
 			</div>
 		</div>
-            <div class="text-right">
-				<button class="btn btn-primary btn-block btn-flat" ng-click="registerAnchor(anchor)" ng-disabled="myForm.$invalid" style="width: 100px">Register</button>
-            </div>
 	 </section>
 </div>
