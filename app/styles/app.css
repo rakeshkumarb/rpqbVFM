@@ -73,25 +73,44 @@
 }
 
 /* Rakesh Styling */
-.smallbox_bgaqua{
-    background-color: aqua;
-    width:100%
+.box-body1{
+ border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+     width: 330px;
 }
-.smallbox_bggreen{
-    background-color: green;
-    width:100%
+.boder{
+ border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+     width: 330px;
 }
-.smallbox_bgyellow{
-    background-color: yellow;
-    width:100%
+
+.anchor-ok{
+    background-color: blue;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
 }
-.smallbox_bgred{
-    background-color: red;
-    width:100%
+.anchor-cancel{
+    background-color:darkorange;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    position: relative;
+    right: 300px;
+    bottom: 20px;
 }
-.ng-binding{
-    -webkit-text-fill-color:green;
-}
+
+
 .btn{
     background-color:dodgerblue;
     border-color: white;
@@ -158,6 +177,7 @@
     border-top: 0px;
 
 }
+
 
     
 
