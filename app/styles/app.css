@@ -38,8 +38,8 @@
 }
 .bg-red{
     background-color:red;
-   height: 90px;
-    width: 310px;
+     height: 90px;
+     width: 310px;
     -webkit-text-fill-color: white;
 }
 
@@ -56,20 +56,28 @@
 
 
 .smallbox_bgaqua{
-    background-color: aqua;
-    width:100%
+    background-color:deepskyblue;
+     height: 90px;
+     width: 310px;
+    -webkit-text-fill-color: white;
 }
 .smallbox_bggreen{
     background-color: green;
-    width:100%
+    height: 90px;
+     width: 310px;
+    -webkit-text-fill-color: white;
 }
 .smallbox_bgyellow{
-    background-color: yellow;
-    width:100%
+   background-color:orange;
+     height: 90px;
+     width: 310px;
+    -webkit-text-fill-color: white;
 }
 .smallbox_bgred{
     background-color: red;
-    width:100%
+     height: 90px;
+     width: 310px;
+    -webkit-text-fill-color: white;
 }
 
 /* Rakesh Styling */
@@ -204,6 +212,9 @@
     font-size: 14px;
     line-height: 1.42857143;
     margin-bottom: 0;
+    position: relative;
+    right: 300px;
+    bottom: 20px;
 }
 .head-rapid{
     font-size: x-large;

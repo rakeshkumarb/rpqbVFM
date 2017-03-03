@@ -1,28 +1,28 @@
-<br> 
+<br>
 <br>
 <h3 align="center">Vendor Sign Purchase Order</h3>
 
-<div class="col-sm-14">
-    <input type="text" id="inputFname" placeholder="search by anchor programID">
+
+<br>
+
+<br>
+<div class="col-sm-11">
+    {{models-table data=model columns=columns}}
+
 </div>
 <br>
-
-<br>
-{{models-table
-        data=model
-        columns=columns}}<br>
-
-
-
-
-   
 <br>
 <br>
+<div class="col-sm-12">
+    <div class="col-sm-6">
+        <div class="vendor-ok">
 
-    <div class="vendor-ok">
-
-    <button type="submit">OK</button>
+            <button type="submit">OK</button>
+        </div>
     </div>
-     <div class="vendor-cancel">
-    <button type="submit">cancel</button>
+    <br>
+    <div class="vendor-cancel">
+        <button type="submit">cancel</button>
     </div>
+
+</div>
